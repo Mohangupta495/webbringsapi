@@ -1,10 +1,10 @@
 const express = require("express");
 // const dotenv = require("dotenv");
 const connectionDB = require("./db");
-// const cors = require("cors");
+const cors = require("cors");
 
 const app = express();
-// app.use(cors());
+app.use(cors());
 connectionDB();
 const PORT = 3001;
 app.listen(PORT, () => {
