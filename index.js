@@ -4,8 +4,8 @@ const connectionDB = require("./db");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
-connectionDB();
+// app.use(cors());
+// connectionDB();
 app.get("/", (req, res) => {
   res.send("Welcome to WebBrings api section.");
 });
